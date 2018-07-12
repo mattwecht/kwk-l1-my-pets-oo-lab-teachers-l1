@@ -56,17 +56,17 @@ describe Owner do
 
   it 'knows about its fishes' do
     owner.buy_fish("Bubbles")
-    expect(owner.pets[:fishes][0]).to eq("Bubbles")
+    expect(owner.pets[:fishes][0]).to eq(["Bubbles"])
   end
 
   it 'knows about its cats' do 
     owner.buy_cat("Crookshanks")
-    expect(owner.pets[:cats][0]).to eq("Crookshanks")
+    expect(owner.pets[:cats][0]).to eq(["Crookshanks"])
   end
 
   it 'knows about its dogs' do
     owner.buy_dog("Snuffles")
-    expect(owner.pets[:dogs][0]).to eq("Snuffles") 
+    expect(owner.pets[:dogs][0]).to eq(["Snuffles"]) 
   end
 
   it 'can list off its pets' do 
