@@ -25,5 +25,9 @@ class Owner
     dog = Dog.new(name)
     @pets[:dogs] = [dog.name]
   end
+  
+  def list_pets
+    puts "I have #{:dogs.length}(s), and #{:cats.length}(s)."
+  end
 
  end
